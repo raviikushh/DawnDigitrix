@@ -11,12 +11,12 @@ const HomePage = () => {
     <div className="container mt-40">
 
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center">
           <motion.h1 
           variants={slideUp(0.2)}
            initial="initial"
             animate="animate"
-             className=" text-slate-800 text-4xl md:text-8xl font-bold">
+             className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px]">
             <Typewriter
             onInit={(typewriter) => {
               typewriter.typeString("Unleash the Dawn of Digital Success!")
@@ -36,18 +36,20 @@ const HomePage = () => {
             }}
           />
           </motion.h1>
+          <div className="para mt-12 md:mt-44">        
           <motion.h1
           variants={slideUp(0.4)}
           initial="initial"
            animate="animate"
-           className="text-slate-500 font-bold  text-xl md:text-2xl">
-            Awaken the Power of Digital Marketing
+           className="text-slate-500 font-bold text-xl md:text-2xl">
+            Elevating brands into the digital dawn.
             </motion.h1>
           <motion.button
           variants={slideUp(0.6)}
           initial="initial"
            animate="animate"
           className="primary-btn">Get Started</motion.button>
+          </div>
         </div>
 
           <div className="heroimg pt-4">
@@ -69,7 +71,7 @@ const HomePage = () => {
             transition={{duration: 0.5, delay: 0.4}}
             src={HeroImg2} alt="hero" />
           </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center">
           <motion.h1 
             initial={{opacity: 0, x:-30}}
             whileInView={{opacity: 1, x:0}}

@@ -7,7 +7,7 @@
 
 @layer components{
   .primary-btn{
-    @apply bg-primary text-white px-4 py-2 rounded shadow-sm hover:shadow-md;
+    @apply bg-black text-white px-4 py-2 rounded-lg shadow-sm hover:shadow-md;
   }
 }
 
