@@ -31,9 +31,9 @@ const Header = () => {
             variants={slideBottom(0.2)}
             initial="initial"
             animate="animate"
-    className={`bg-white/30 bg-opacity-80 flex fixed transition-shadow duration-300 ease-in-out ${scroll ? 'shadow-md' : ''} justify-between items-center backdrop-blur top-0 left-0 right-0 z-10 h-32`}>
+    className={`bg-white/30 bg-opacity-80 flex fixed transition-shadow duration-300 ease-in-out ${scroll ? 'shadow-md' : ''} justify-between items-center backdrop-blur top-0 left-0 right-0 z-10 h-32 bg-gray-100`}>
           <div className="flex items-center">
-          <img src={logo} alt='logo' className='w-[400px] h-44 cursor-pointer' />
+          <img src={logo} alt='logo' className='h-32 cursor-pointer' />
           </div>
               <div className=" text-xl mx-14 hidden md:block p-2 ">
                  <ul className="flex flex-wrap flex-grow gap-8 items-center">
