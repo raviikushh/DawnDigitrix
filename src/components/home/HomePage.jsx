@@ -8,7 +8,7 @@ import { Footer } from "../footer/Footer"
 
 const HomePage = () => {
   return (
-    <div className="container">
+    <div className="container mt-40">
 
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
         <div className="flex flex-col justify-center items-center">
