@@ -19,11 +19,11 @@ const Header = () => {
             initial="initial"
             animate="animate"
     className="bg-white/30 bg-opacity-80 flex justify-between items-center backdrop-blur top-0 left-0 right-0 sticky z-10 h-32">
-          <div className="flex items-center ml-[-30px]">
+          <div className="flex items-center">
           <img src={logo} alt='logo' className='w-96 h-48 cursor-pointer' />
           </div>
-              <div className=" text-xl w-[37%] mt-[-30px] hidden md:block">
-                 <ul className="flex flex-wrap flex-grow gap-4 items-center hover:text-primary">
+              <div className=" text-xl mx-14 hidden md:block p-2">
+                 <ul className="flex flex-wrap flex-grow gap-8 items-center hover:text-primary">
                   <li className="cursor-pointer hover:text-slate-500" onClick={HandleNavigate}>Home</li>
                   <li className="cursor-pointer hover:text-slate-500" onClick={HandleNavigate}>About Us</li>
                   <li className="cursor-pointer hover:text-slate-500" onClick={HandleNavigate}>Services</li>

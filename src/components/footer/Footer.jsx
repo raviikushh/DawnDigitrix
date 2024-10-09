@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <div>
         <div className="h1 bg-black text-white flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-bold p-2">Contact Us</h1>
+        <h1 className="md:text-3xl text-xl font-bold p-2">Contact Us</h1>
         </div>
         {/* add logo */}
         <section className="bg-black text-white flex  justify-between items-center">
