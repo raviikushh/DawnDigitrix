@@ -2,7 +2,7 @@
 const ContactPage = () => {
   return (
     <div>
-    <h1 className="text-3xl">Contact</h1>
+    <h1 className="text-3xl mt-40">Contact</h1>
     <form action="">
         <input type="text" />
     </form>

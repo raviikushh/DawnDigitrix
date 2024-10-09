@@ -1,7 +1,7 @@
 import HeroImg from "../../assets/1.jpg"
 import HeroImg2 from "../../assets/strategy.avif"
 import Typewriter from 'typewriter-effect'
-  import {motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 import {slideUp} from '../../utility/animation'
 import Cards from "../cards/Cards"
 import { Footer } from "../footer/Footer"
@@ -41,14 +41,14 @@ const HomePage = () => {
           variants={slideUp(0.4)}
           initial="initial"
            animate="animate"
-           className="text-slate-500 font-bold text-xl md:text-2xl">
+           className="text-slate-500 font-bold text-xl md:text-2xl mt-4">
             Elevating brands into the digital dawn.
             </motion.h1>
           <motion.button
           variants={slideUp(0.6)}
           initial="initial"
            animate="animate"
-          className="primary-btn">Get Started</motion.button>
+          className="primary-btn mt-4">Get Started</motion.button>
           </div>
         </div>
 
@@ -84,7 +84,6 @@ const HomePage = () => {
             whileInView={{opacity: 1, x:0}}
             transition={{duration: 0.5, delay: 0.4}}
             className="text-slate-500 font-bold  text-xl md:text-2xl">Your Brand, Your Dawn, Your Triumph.</motion.h1>
-          
         </div>
 
       </div>
