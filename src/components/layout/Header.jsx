@@ -32,7 +32,7 @@ const Header = () => {
             initial="initial"
             animate="animate"
     className={`bg-opacity-80 flex fixed transition-shadow duration-300 ease-in-out ${scroll ? 'shadow-md' : ''} justify-between items-center backdrop-blur top-0 left-0 right-0 z-10 h-32 bg-gray-100`}>
-          <div className="flex items-center">
+          <div className="flex items-center mx-8">
           <img src={logo} alt='logo' className='h-32 cursor-pointer' />
           </div>
               <div className=" text-xl mx-14 hidden md:block p-2 ">
