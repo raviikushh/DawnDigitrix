@@ -29,11 +29,11 @@ const ContactPage = () => {
 
   return (
     <>
-        <div className="contact-page mt-40 px-4 sm:px-6 lg:px-8">
-  <h1 className="text-4xl font-bold text-center mb-8">Contact Us</h1>
+    <div className="contact-page mt-32 px-4 sm:px-6 lg:px-8 bg-gray-100">
+  <h1 className="text-4xl font-bold text-center mb-8 pt-10">Connect with Us</h1>
   <form
     onSubmit={handleSubmit}
-    className="contact-form max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md"
+    className="contact-form max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mb-14"
   >
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
       <div className="form-group">
