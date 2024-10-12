@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import {slideBottom} from '../../utility/animation'
 import { useState, useEffect } from 'react'
 import { CIcon } from '@coreui/icons-react';
-import { cilList } from '@coreui/icons';
+import { cilMenu } from '@coreui/icons';
 
 
 const Header = () => {
@@ -45,7 +45,7 @@ const Header = () => {
                   <li className="cursor-pointer hover:text-slate-500 primary-btn " onClick={HandleNavigate}>Contact</li>
                  </ul>
               </div>
-             <CIcon icon={cilList} size='xl' className='md:hidden m-14 w-14 text-gray-600 cursor-pointer'/>    
+             <CIcon icon={cilMenu} size='xl' className='md:hidden m-14 w-14 text-gray-600 cursor-pointer'/>    
     </motion.nav>
   )
 }

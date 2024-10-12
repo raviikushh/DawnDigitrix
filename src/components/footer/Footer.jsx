@@ -6,13 +6,13 @@ import linkedin from '../../assets/linkedin.avif'
 
 export const Footer = () => {
   return (
-    <div className='w-full bg-black md:h-64'>
-    <div className='container mx-auto py-8 px-4 flex flex-col md:flex-row justify-between items-center'>
-      <div className='flex flex-col items-center md:items-start'>
-        <img src={logo} alt='Digi Logo' className='h-28 mb-4' />
-        <p className='text-white text-sm'>&copy; 2024 Dawn Digitrix. All rights reserved.</p>
+    <div className='w-full bg-black md:h-64 overflow-hidden'>
+    <div className='container mx-auto md:py-8 md:px-4 flex flex-col md:flex-row justify-between items-center'>
+      <div className='flex flex-col items-center md:items-start '>
+        <img src={logo} alt='Digi Logo' className='h-28 md:mb-4' />
+        <p className='text-white text-sm hidden md:block'>&copy; 2024 Dawn Digitrix. All rights reserved.</p>
       </div>
-      <div className='flex flex-col items-center md:items-start mt-4 md:mt-0'>
+      <div className='flex flex-col items-center md:items-start md:mt-0 gap-2'>
         <h4 className='text-white text-4xl mb-2'>Contact Us</h4>
         <p className='text-white text-sm'>Email: contact@dawndigitrix.com</p>
         <p className='text-white text-sm'>Phone: +123 456 7890</p>
@@ -32,6 +32,7 @@ export const Footer = () => {
         <img src={linkedin} alt='LinkedIn' className='h-8 mx-2' />
         </a>
       </div>
+        <p className='text-white text-sm md:hidden mt-4'>&copy; 2024 Dawn Digitrix. All rights reserved.</p>
     </div>
     </div>
   )
