@@ -8,13 +8,13 @@ import Cards from "../cards/Cards"
 const HomePage = () => {
   return (
     <div className="mt-32 bg-gray-100 overflow-hidden md:px-40">
-      <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+      <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
         <div className="flex flex-col justify-center items-center md:items-start">
           <motion.h1 
           variants={slideUp(0.2)}
            initial="initial"
             animate="animate"
-             className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-8 md:ml-0">
+             className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-16 md:ml-0 md:w-[600px]">
             <Typewriter
             onInit={(typewriter) => {
               typewriter.typeString("Unleash the Dawn of Digital Success!")

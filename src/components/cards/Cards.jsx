@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 const Cards = () => {
   return (
     <>
-    <div className="bg-gray-50 py-20">
+    <div className="bg-gray-50 py-20 px-10 md:px-0">
     <div className="containers">
     </div>
         <motion.div 
