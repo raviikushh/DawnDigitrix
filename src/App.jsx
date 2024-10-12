@@ -4,7 +4,7 @@ import HomePage from "./components/home/HomePage"
 import AboutPage from "./components/about/AboutPage"
 import ServicePage from "./components/services/ServicePage"
 import ContactPage from "./components/contact/ContactPage"
-
+import { Footer } from "./components/footer/Footer"
 
 function App() {
 
@@ -17,7 +17,8 @@ function App() {
         <Route path='about' element={<AboutPage />} />
         <Route path='services' element={<ServicePage />} />
         <Route path='contact' element={<ContactPage />} />
-      </Routes>
+      </Routes> 
+    <Footer/>
     </BrowserRouter>
     </main>
   )

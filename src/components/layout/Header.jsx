@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import {slideBottom} from '../../utility/animation'
 import { useState, useEffect } from 'react'
+import { CIcon } from '@coreui/icons-react';
+import { cilList } from '@coreui/icons';
 
 
 const Header = () => {
@@ -31,7 +33,7 @@ const Header = () => {
             variants={slideBottom(0.2)}
             initial="initial"
             animate="animate"
-    className={`bg-opacity-80 flex fixed transition-shadow duration-300 ease-in-out ${scroll ? 'shadow-md' : ''} justify-between items-center backdrop-blur top-0 left-0 right-0 z-10 h-32 bg-gray-100`}>
+    className={`bg-opacity-80 flex fixed transition-shadow duration-300 ease-in-out ${scroll ? 'shadow-md' : ''} justify-between items-center backdrop-blur top-0 right-0 left-0 z-10 h-32 bg-gray-100 `}>
           <div className="flex items-center mx-8">
           <img src={logo} alt='logo' className='h-32 cursor-pointer' />
           </div>
@@ -42,8 +44,8 @@ const Header = () => {
                   <li className="cursor-pointer hover:text-slate-500" onClick={HandleNavigate}>Services</li>
                   <li className="cursor-pointer hover:text-slate-500 primary-btn " onClick={HandleNavigate}>Contact</li>
                  </ul>
-              
               </div>
+             <CIcon icon={cilList} size='xl' className='md:hidden m-14 w-14 text-gray-600 cursor-pointer'/>    
     </motion.nav>
   )
 }

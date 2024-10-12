@@ -4,12 +4,10 @@ import Typewriter from 'typewriter-effect'
 import {motion} from 'framer-motion'
 import {slideUp} from '../../utility/animation'
 import Cards from "../cards/Cards"
-import { Footer } from "../footer/Footer"
 
 const HomePage = () => {
   return (
-    <div className="container mt-32 bg-slate-600/10 rounded-lg ">
-
+    <div className="mt-32 bg-gray-100 overflow-hidden md:px-40">
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
         <div className="flex flex-col justify-center">
           <motion.h1 
@@ -64,7 +62,7 @@ const HomePage = () => {
       </div>
 
       {/* Second Hero Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] bg-purple-100/40 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
       <div className="heroimg pt-4">
             <motion.img
             initial={{opacity: 0, x:100}}
@@ -87,10 +85,8 @@ const HomePage = () => {
             transition={{duration: 0.5, delay: 0.4}}
             className="text-slate-500 font-bold  text-xl md:text-2xl mx-7">Your Brand, Your Dawn, Your Triumph.</motion.h1>
         </div>
-
       </div>
       <Cards />
-      <Footer />
     </div>
   )
 }

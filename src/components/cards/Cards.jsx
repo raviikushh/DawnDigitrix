@@ -16,7 +16,7 @@ const Cards = () => {
                     initial={{opacity: 0, x:-100}}
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration: 0.5, delay: 0.4}}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 rounded-lg">
 
                 {/* Social Media Marketing */}
             <div className="Social Media Marketing bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-110 transition-all duration-700">
