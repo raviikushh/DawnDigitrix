@@ -14,7 +14,7 @@ const HomePage = () => {
           variants={slideUp(0.2)}
            initial="initial"
             animate="animate"
-             className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-12 md:ml-0 md:w-[600px] mt-12 md:mt-0">
+             className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-8 md:ml-0 md:w-[600px] mt-12 md:mt-0">
             <Typewriter
             onInit={(typewriter) => {
               typewriter.typeString("Unleash the Dawn of Digital Success!")
@@ -56,7 +56,7 @@ const HomePage = () => {
             animate={{opacity: 1, x:0}}
             transition={{duration: 0.5, delay: 0.6}}
             src={HeroImg} alt="hero" 
-            className="rounded-lg mx-2"/>
+            className="rounded-lg md:mx-2"/>
           </div>
 
       </div>
