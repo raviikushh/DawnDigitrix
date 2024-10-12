@@ -1,17 +1,17 @@
-import logo from '../../assets/digi.png'
 import { CIcon } from '@coreui/icons-react';
 import {cibFacebookF} from '@coreui/icons'
 import {cibLinkedinIn} from '@coreui/icons'
 import {cibInstagram} from '@coreui/icons'
 import {cibTwitter} from '@coreui/icons'
+import whitelogo from '../../assets/logo_white.png'
 
 
 export const Footer = () => {
   return (
     <div className='w-full bg-black md:h-64 overflow-hidden'>
-    <div className='container mx-auto md:py-8 md:px-4 flex flex-col md:flex-row justify-between items-center'>
+    <div className='container mx-auto  md:px-4 flex flex-col md:flex-row justify-between items-center'>
       <div className='flex flex-col items-center md:items-start '>
-        <img src={logo} alt='Digi Logo' className='h-28 md:mb-4' />
+        <img src={whitelogo} alt='Digi Logo' className='h-48' />
         <p className='text-white text-sm hidden md:block'>&copy; 2024 Dawn Digitrix. All rights reserved.</p>
       </div>
       <div className='flex flex-col items-center md:items-start md:mt-0 gap-2'>
