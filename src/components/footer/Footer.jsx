@@ -1,8 +1,10 @@
 import logo from '../../assets/digi.png'
-import fb from '../../assets/fb.avif'
-import x from '../../assets/x.avif'
-import insta from '../../assets/insta.avif'
-import linkedin from '../../assets/linkedin.avif'
+import { CIcon } from '@coreui/icons-react';
+import {cibFacebookF} from '@coreui/icons'
+import {cibLinkedinIn} from '@coreui/icons'
+import {cibInstagram} from '@coreui/icons'
+import {cibTwitter} from '@coreui/icons'
+
 
 export const Footer = () => {
   return (
@@ -18,18 +20,18 @@ export const Footer = () => {
         <p className='text-white text-sm'>Phone: +123 456 7890</p>
         <p className='text-white text-sm'>Address: 123 Digital St, Marketing City, 45678</p>
       </div>
-      <div className='flex mt-4 md:mt-0'>
+      <div className='flex mt-4 md:mt-0 gap-3'>
         <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
-        <img src={fb} alt='Facebook' className='h-8 mx-2' />
+        <CIcon icon={cibFacebookF} className='h-8 bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-blue-600'/>
         </a>
         <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
-        <img src={x} alt='Twitter' className='h-8 mx-2' />
+        <CIcon icon={cibTwitter} className='h-8  bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-blue-400'/>
         </a>
         <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'>
-        <img src={insta} alt='Instagram' className='h-8 mx-2' />
+        <CIcon icon={cibInstagram} className='h-8  bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-gradient-to-r from-orange-500  to-pink-500'/>
         </a>
         <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>
-        <img src={linkedin} alt='LinkedIn' className='h-8 mx-2' />
+        <CIcon icon={cibLinkedinIn} className='h-8  bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-blue-500'/>
         </a>
       </div>
         <p className='text-white text-sm md:hidden mt-4'>&copy; 2024 Dawn Digitrix. All rights reserved.</p>

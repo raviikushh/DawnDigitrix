@@ -5,10 +5,12 @@ import AboutPage from "./components/about/AboutPage"
 import ServicePage from "./components/services/ServicePage"
 import ContactPage from "./components/contact/ContactPage"
 import { Footer } from "./components/footer/Footer"
+import { NextUIProvider } from "@nextui-org/react"
 
 function App() {
 
   return (
+    <NextUIProvider>
     <main>
     <BrowserRouter>
     <Header/>
@@ -21,6 +23,7 @@ function App() {
     <Footer/>
     </BrowserRouter>
     </main>
+    </NextUIProvider>
   )
 }
 
