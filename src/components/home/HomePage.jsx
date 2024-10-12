@@ -8,10 +8,43 @@ import Typewriter from 'typewriter-effect'
 import {motion} from 'framer-motion'
 import {slideUp} from '../../utility/animation'
 import Cards from "../cards/Cards"
+import { useEffect, useState } from 'react';
 
 const HomePage = () => {
+    const [showScroll, setShowScroll] = useState(false);
+
+    const checkScrollTop = () => {
+      if (!showScroll && window.pageYOffset > 400) {
+        setShowScroll(true);
+      } else if (showScroll && window.pageYOffset <= 400) {
+        setShowScroll(false);
+      }
+    };
+
+    const scrollTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    useEffect(() => {
+      window.addEventListener('scroll', checkScrollTop);
+      return () => {
+        window.removeEventListener('scroll', checkScrollTop);
+      };
+    }, [showScroll]);
+
+
+
   return (
-    <div className="mt-32 bg-gray-100 overflow-hidden md:px-40">
+    <>
+      {showScroll && (
+        <button
+          onClick={scrollTop}
+          className="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full h-12 w-10 shadow-lg hover:bg-blue-700 transition duration-300"
+        >
+          ↑
+        </button>
+      )}
+      <div className="mt-32 bg-gray-100 overflow-hidden md:px-40">
       <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
         <div className="flex flex-col justify-center items-center md:items-start">
           <motion.h1 
@@ -62,9 +95,7 @@ const HomePage = () => {
             src={HeroImg} alt="hero" 
             className="rounded-lg md:mx-2 p-4 "/>
           </div>
-
       </div>
-
       {/* Second Hero Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
       <div className="heroimg pt-4">
@@ -191,6 +222,7 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
