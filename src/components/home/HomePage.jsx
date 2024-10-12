@@ -69,9 +69,9 @@ const HomePage = () => {
             whileInView={{opacity: 1, x:0}}
             transition={{duration: 0.5, delay: 0.4}}
             src={HeroImg2} alt="hero"
-            className="rounded-lg p-4 md:p-0" />
+            className="rounded-lg p-4 md:p-0"/>
           </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center p-4 md:p-0">
           <motion.h1 
             initial={{opacity: 0, x:-30}}
             whileInView={{opacity: 1, x:0}}
