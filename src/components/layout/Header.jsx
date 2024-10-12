@@ -50,7 +50,7 @@ const Header = () => {
                  </ul>
               </div>
               <div className="md:hidden">
-              <CIcon icon={cilMenu} size='lg' className='h-14 mx-8 text-gray-600 cursor-pointer' onClick={onOpen}/> 
+              <CIcon icon={cilMenu} size='lg' className='h-10 mx-8 text-gray-600 cursor-pointer' onClick={onOpen}/> 
               <ModalPage 
               isOpen ={isOpen}
               onClose={onClose}
