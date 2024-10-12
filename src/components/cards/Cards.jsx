@@ -6,6 +6,8 @@ import Img5 from '../../assets/email.avif'
 import Img6 from '../../assets/web.avif' 
 import {motion} from 'framer-motion'
 
+
+
 const Cards = () => {
   return (
     <>
@@ -19,7 +21,7 @@ const Cards = () => {
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 rounded-lg">
 
                 {/* Social Media Marketing */}
-            <div className="Social Media Marketing bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-110 transition-all duration-700">
+            <div className="Social Media Marketing bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto  transition-all duration-700" >
                 <img src={Img1} alt="" className="w-36 h-36 rounded-full object-contain p-3" />
                 <h1 className="text-xl font-semibold">Social Media Marketing</h1>
                 <p className="text-sm text-black/80 leading-relaxed">Our social media marketing services are designed to grow your brand’s online presence. We help your brand establish trust and build relationships with potential buyers.</p>

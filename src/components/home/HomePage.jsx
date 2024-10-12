@@ -56,7 +56,7 @@ const HomePage = () => {
             animate={{opacity: 1, x:0}}
             transition={{duration: 0.5, delay: 0.6}}
             src={HeroImg} alt="hero" 
-            className="rounded-lg md:mx-2"/>
+            className="rounded-lg md:mx-2 p-4 "/>
           </div>
 
       </div>
@@ -69,7 +69,7 @@ const HomePage = () => {
             whileInView={{opacity: 1, x:0}}
             transition={{duration: 0.5, delay: 0.4}}
             src={HeroImg2} alt="hero"
-            className="rounded-lg" />
+            className="rounded-lg p-4 md:p-0" />
           </div>
         <div className="flex flex-col justify-center">
           <motion.h1 
