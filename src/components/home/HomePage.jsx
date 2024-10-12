@@ -14,7 +14,7 @@ const HomePage = () => {
           variants={slideUp(0.2)}
            initial="initial"
             animate="animate"
-             className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-16 md:ml-0 md:w-[600px] mt-14 md:mt-0">
+             className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-12 md:ml-0 md:w-[600px] mt-12 md:mt-0">
             <Typewriter
             onInit={(typewriter) => {
               typewriter.typeString("Unleash the Dawn of Digital Success!")
