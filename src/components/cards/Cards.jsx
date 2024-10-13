@@ -37,7 +37,7 @@ const Cards = () => {
             {/* PPC */}
             <div className="PPC bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-110 transition-all duration-700">
                 <img src={Img3} alt="" className="w-36 h-36 rounded-full object-contain" />
-                <h1 className="text-xl font-semibold">PPC</h1>
+                <h1 className="text-xl font-semibold">Performance Marketing</h1>
                 <p className="text-sm text-black/80 leading-relaxed">Our PPC services help drive traffic to your website by improving keyword rankings in search engines.</p>
             </div>
 

@@ -1,11 +1,16 @@
 
 const About = () => {
   return (
-    <div>
-      <h1 className="text-3xl mt-40">About</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, unde eius consequuntur id veniam placeat commodi deleniti, officiis suscipit at iusto dolor nobis natus labore molestias eveniet aut quod! Incidunt at doloribus commodi repellendus alias perspiciatis aliquid sequi non tenetur corrupti dolore iure, quos dicta, quae nobis maxime inventore deserunt possimus, officiis amet ex beatae dignissimos reprehenderit reiciendis. Tempora mollitia magni at laboriosam neque eaque perspiciatis dignissimos aut maxime vero accusamus sapiente, est optio blanditiis laborum quas, provident aperiam quibusdam. Voluptates harum non dolorem cumque odio repellendus, reiciendis eos aliquid aut laudantium voluptate laborum veritatis nobis illo iure. Provident, dignissimos.</p>
+    <div className="mt-40">
+      <h1 className="text-4xl font-bold text-center">About Us</h1>
+      <div className="mission mt-8">
+        <p className="text-lg leading-relaxed">
+          <span className="text-xl font-semibold">Our Mission:</span> To Empower Businesses with Strategic, Data-Driven Digital Marketing Solutions.
+          At DawnDigitrix, we are passionate about helping businesses harness the power of the digital world. Though we are a new player in the marketing space, our team brings a wealth of experience, creativity, and dedication to every project. Our mission is simple: to help you achieve your marketing goals through innovative solutions that drive results.
+          We specialize in understanding your brand&apos;s unique story, audience, and goals to create custom strategies that align with your vision. Whether it&apos;s building a strong online presence, increasing customer engagement, or driving conversions, DawnDigitrix is here to guide you at every step of the journey.
+        </p>
+      </div>
     </div>
-
   )
 }
 
