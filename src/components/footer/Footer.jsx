@@ -19,7 +19,7 @@ export const Footer = () => {
         <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
         <CIcon icon={cibTwitter} className='h-8  bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-blue-400'/>
         </a>
-        <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'>
+        <a href='https://www.instagram.com/dawndigitrix.inc?igsh=N2xocm96dHAxNWJ1' target='_blank' rel='noopener noreferrer'>
         <CIcon icon={cibInstagram} className='h-8  bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-gradient-to-r from-orange-500  to-pink-500'/>
         </a>
         <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>
@@ -46,7 +46,7 @@ export const Footer = () => {
       <div className="content md:w-[500px] mx-12  mt-8 md:mx-0 md:mt-0 mb-20">
       <p className='text-white tracking-wide text-justify'> <span className='text-xl font-semibold '>DawnDigitrix.</span> is here to ignite your business’s digital transformation Just as the first light of dawn signals new beginnings, we elevate brands by enhancing their online presence, driving engagement, and helping them achieve success in the digital world. Together, we can turn your business vision into reality and reach new heights.</p>
       </div>
-      <div className="privacy px-14">
+      <div className="privacy md:pr-20 px-14 ">
         <ul>
           <li className='text-white cursor-pointer hover:text-gray-100'>Privacy Policy</li>
           <li className='text-white cursor-pointer hover:text-gray-100'>Terms & Conditions</li>
