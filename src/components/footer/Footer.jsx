@@ -26,12 +26,10 @@ export const Footer = () => {
         <CIcon icon={cibLinkedinIn} className='h-8  bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-blue-500'/>
         </a>
       </div>
-        <p className='text-white text-sm md:hidden mt-4'>&copy; 2024 Dawn Digitrix. All rights reserved.</p>
     </div>
 
     
-    <div className='w-full border-t border-gray-700 my-4 p-4 mx-12'>
-    </div>
+    <hr className='border-b border-gray-700 mx-12 my-4  '/>
 
     {/* Second footer */}
     <div className="leftcontent flex flex-col md:flex-row justify-between">
@@ -53,10 +51,9 @@ export const Footer = () => {
         </ul>
       </div>
       </div>
-      <div className='w-full border-t border-gray-700 my-4 p-4 mx-12'>
-      </div>
+      <hr className='border-b border-gray-700 mx-12'/>
       <div className='w-full bg-black pb-4 px-12'>
-        <p className='text-white text-sm md:text-base text-start'>&copy; 2024  DawnDigitrix. All rights reserved.</p>
+        <p className='text-white text-sm md:text-base text-start mt-2'>&copy; 2024  DawnDigitrix. All rights reserved.</p>
       </div>
     </div>
   )
