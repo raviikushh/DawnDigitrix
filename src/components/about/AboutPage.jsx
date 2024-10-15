@@ -1,4 +1,4 @@
-import Innovative from '../../assets/Innovative.jpg'
+import Innovative from '../../assets/innovative.jpg'
 
 
 const About = () => {
