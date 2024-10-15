@@ -45,10 +45,10 @@ const HomePage = () => {
           ↑
         </button>
       )}
-        <div className="absolute h-[600px] w-full">
+        <div className="md:h-[700px] h-[450px] w-full">
           <video src={Video} autoPlay loop muted className="w-full h-full object-cover" type="video/mp4" ></video>
         </div>
-      <div className="bg-gray-100 overflow-hidden md:px-40 mt-32">
+      <div className="bg-gray-100 overflow-hidden md:px-40 top-0 md:-mt-[600px] -mt-[300px]">
       <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
         <div className="flex flex-col justify-center items-center md:items-start">
           <motion.h1 
