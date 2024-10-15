@@ -29,7 +29,7 @@ export const Footer = () => {
     </div>
 
     
-    <hr className='border-b border-gray-700 mx-12 my-4  '/>
+    <hr className='border-b border-gray-700 mx-12 my-4 mb-10'/>
 
     {/* Second footer */}
     <div className="leftcontent flex flex-col md:flex-row justify-between">
@@ -42,9 +42,9 @@ export const Footer = () => {
         </div>
       </div>
       <div className="content md:w-[500px] mx-12  mt-8 md:mx-0 md:mt-0 mb-20">
-      <p className='text-white tracking-wide text-justify'> <span className='text-xl font-semibold '>DawnDigitrix.</span> is here to ignite your business’s digital transformation Just as the first light of dawn signals new beginnings, we elevate brands by enhancing their online presence, driving engagement, and helping them achieve success in the digital world. Together, we can turn your business vision into reality and reach new heights.</p>
+      <p className='text-white text-justify'> <span className='text-xl font-semibold '>DawnDigitrix.</span> is here to ignite your business’s digital change Just as the first light of dawn signals new beginnings, we elevate brands by enhancing their online presence, driving engagement, and helping them achieve success in the digital world. Together, we can turn your business vision into reality and reach new heights.</p>
       </div>
-      <div className="privacy md:pr-20 px-14 ">
+      <div className="privacy md:pr-20 pr-14 px-14 md:px-0 ">
         <ul>
           <li className='text-white cursor-pointer hover:text-gray-100'>Privacy Policy</li>
           <li className='text-white cursor-pointer hover:text-gray-100'>Terms & Conditions</li>

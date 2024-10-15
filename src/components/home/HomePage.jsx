@@ -1,14 +1,15 @@
-import HeroImg from "../../assets/1.jpg"
+// import HeroImg from "../../assets/1.jpg"
 import HeroImg2 from "../../assets/strategy.avif"
-import IdeaImg from "../../assets/ideas.jpg"
-import ExpertTeam from "../../assets/expert-team.avif"
-import Customer from "../../assets/customer.avif"
-import TrackRecord from "../../assets/track-record.avif"
+// import IdeaImg from "../../assets/ideas.jpg"
+// import ExpertTeam from "../../assets/expert-team.avif"
+// import Customer from "../../assets/customer.avif"
+// import TrackRecord from "../../assets/track-record.avif"
 import Typewriter from 'typewriter-effect'
 import {motion} from 'framer-motion'
 import {slideUp} from '../../utility/animation'
 import Cards from "../cards/Cards"
 import { useEffect, useState } from 'react';
+import Video from '../../assets/back-video.mp4'
 
 const HomePage = () => {
     const [showScroll, setShowScroll] = useState(false);
@@ -44,7 +45,10 @@ const HomePage = () => {
           ↑
         </button>
       )}
-      <div className="mt-32 bg-gray-100 overflow-hidden md:px-40">
+        <div className="absolute h-[600px] w-full">
+          <video src={Video} autoPlay loop muted className="w-full h-full object-cover" type="video/mp4" ></video>
+        </div>
+      <div className="bg-gray-100 overflow-hidden md:px-40 mt-32">
       <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
         <div className="flex flex-col justify-center items-center md:items-start">
           <motion.h1 
@@ -87,14 +91,14 @@ const HomePage = () => {
           </div>
         </div>
 
-          <div className="heroimg pt-4">
+          {/* <div className="heroimg pt-4">
             <motion.img
             initial={{opacity: 0, x:100}}
             animate={{opacity: 1, x:0}}
             transition={{duration: 0.5, delay: 0.6}}
             src={HeroImg} alt="hero" 
             className="rounded-lg md:mx-2 p-4 "/>
-          </div>
+          </div> */}
       </div>
       {/* Second Hero Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
@@ -105,7 +109,7 @@ const HomePage = () => {
             transition={{duration: 0.5, delay: 0.4}}
             src={HeroImg2} alt="hero"
             className="rounded-lg p-4 md:p-0"/>
-          </div>
+      </div>
         <div className="flex flex-col justify-center p-4 md:p-0">
           <motion.h1 
             initial={{opacity: 0, x:-30}}
@@ -123,8 +127,8 @@ const HomePage = () => {
       </div>
       <Cards />
       {/* Why Choose Us Section */}
-      <div className="why-choose-us bg-white py-16">
-        <div className="container mx-auto px-4">
+      {/* <div className="why-choose-us bg-white py-16"> */}
+        {/* <div className="container mx-auto px-4">
           <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -219,8 +223,8 @@ const HomePage = () => {
               />
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
     </>
   )
