@@ -16,6 +16,7 @@ export default {
       colors:{
         primary : "#fdcd2d",
         secondary : "#f0ac0e",
+        'custom-selection': '#ffcc00',
       },
       fontFamily: {
         sans : ["Roboto", "sans-serif"],

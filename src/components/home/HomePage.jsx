@@ -10,6 +10,7 @@ import {slideUp} from '../../utility/animation'
 import Cards from "../cards/Cards"
 import { useEffect, useState } from 'react';
 import Video from '../../assets/back-video.mp4'
+import Team from '../../assets/team.jpg'
 
 const HomePage = () => {
     const [showScroll, setShowScroll] = useState(false);
@@ -45,7 +46,7 @@ const HomePage = () => {
           ↑
         </button>
       )}
-      <div className="md:h-[700px] h-[700px] w-full">
+      <div className="md:h-[700px] h-auto w-full">
         <video
           src={Video}
           autoPlay
@@ -114,6 +115,21 @@ const HomePage = () => {
             className="rounded-lg md:mx-2 p-4 "/>
           </div> */}
         </div>
+      </div>
+
+            <div className="black bg-black/90 h-[500px]  overflow-hidden flex justify-between px-28 py-20 gap-8">
+                <div className="photo w-full h-full m-auto">
+                  <img src={Team} alt="team" className="rounded-xl" />
+                </div>
+                <div className="flex  flex-col text-justify text-xl pl-14">
+                    <h1 className="text-white text-5xl">Why Choose Us?</h1>
+                    <p className="text-white mt-4">At <span className="text-xl font-semibold">DawnDigitrix</span>, the leading Digital Marketing Agency in Delhi, we focus on delivering personalized strategies that align with your unique business objectives. Our approach ensures that every solution is designed with your success in mind. </p>
+
+                   <p className="text-white mt-4"> Choose <span className="text-xl font-semibold">DawnDigitrix</span> for tailor-made digital marketing solutions and a dedicated partnership that is fully committed to helping your business thrive in the ever-evolving digital landscape.</p>
+                </div>
+            </div>
+
+      <div className="md:px-40 overflow-hidden">
         {/* Second Hero Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
           <div className="heroimg pt-4">
