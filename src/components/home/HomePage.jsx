@@ -117,18 +117,16 @@ const HomePage = () => {
         </div>
       </div>
 
-            <div className="black bg-black/90 h-[500px]  overflow-hidden flex justify-between px-28 py-20 gap-8">
-                <div className="photo w-full h-full m-auto">
-                  <img src={Team} alt="team" className="rounded-xl" />
-                </div>
-                <div className="flex  flex-col text-justify text-xl pl-14">
-                    <h1 className="text-white text-5xl">Why Choose Us?</h1>
-                    <p className="text-white mt-4">At <span className="text-xl font-semibold">DawnDigitrix</span>, the leading Digital Marketing Agency in Delhi, we focus on delivering personalized strategies that align with your unique business objectives. Our approach ensures that every solution is designed with your success in mind. </p>
-
-                   <p className="text-white mt-4"> Choose <span className="text-xl font-semibold">DawnDigitrix</span> for tailor-made digital marketing solutions and a dedicated partnership that is fully committed to helping your business thrive in the ever-evolving digital landscape.</p>
-                </div>
-            </div>
-
+     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-20 md:gap-8 py-10">
+         <div className="photo md:w-full h-full md:m-auto">
+           <img src={Team} alt="team" className="rounded-xl p-2 md:p-0" />
+         </div>
+         <div className="flex  flex-col text-justify text-xl md:pl-14 p-4 md:p-0">
+             <h1 className="text-white text-5xl">Why Choose Us?</h1>
+             <p className="text-white mt-4">At <span className="text-xl font-semibold">DawnDigitrix</span>, the leading Digital Marketing Agency in Delhi, we focus on delivering personalized strategies that align with your unique business objectives. Our approach ensures that every solution is designed with your success in mind. </p>
+            <p className="text-white mt-4"> Choose <span className="text-xl font-semibold">DawnDigitrix</span> for tailor-made digital marketing solutions and a dedicated partnership that is fully committed to helping your business thrive in the ever-evolving digital landscape.</p>
+         </div>
+     </div>
       <div className="md:px-40 overflow-hidden">
         {/* Second Hero Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
