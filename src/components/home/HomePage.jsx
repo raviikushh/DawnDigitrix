@@ -45,51 +45,65 @@ const HomePage = () => {
           ↑
         </button>
       )}
-        <div className="md:h-[700px] h-[450px] w-full">
-          <video src={Video} autoPlay loop muted className="w-full h-full object-cover" type="video/mp4" ></video>
-        </div>
-      <div className="bg-gray-100 overflow-hidden md:px-40 top-0 md:-mt-[600px] -mt-[300px]">
-      <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
-        <div className="flex flex-col justify-center items-center md:items-start">
-          <motion.h1 
-          variants={slideUp(0.2)}
-           initial="initial"
-            animate="animate"
-             className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-8 md:ml-0 md:w-[600px] mt-12 md:mt-0">
-            <Typewriter
-            onInit={(typewriter) => {
-              typewriter.typeString("Unleash the Dawn of Digital Success!")
-                .callFunction(() => {
-                  // console.log('String typed out!');
-                })
-                .pauseFor(2500)
-                .deleteAll(30)
-                .callFunction(() => {
-                  // console.log('All strings were deleted');
-                })
-                .start();
-            }}
-            options={{
-              delay: 30,
-              loop: true,
-            }}
-          />
-          </motion.h1>
-          <div className="para mt-12 md:mt-44">        
-          <motion.h1
-          variants={slideUp(0.4)}
-          initial="initial"
-           animate="animate"
-           className="text-slate-500 font-bold text-xl md:text-2xl mt-4">
-            Elevating brands into the digital dawn.
+      <div className="md:h-[700px] h-[700px] w-full">
+        <video
+          src={Video}
+          autoPlay
+          loop
+          muted
+          className="w-full h-full object-cover"
+          type="video/mp4"
+          playsInline
+        ></video>
+      </div>
+      <div className="bg-gray-100 overflow-hidden md:px-40 top-0 md:-mt-[600px] -mt-[600px]">
+        <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
+          <div className="flex flex-col justify-center items-center md:items-start">
+            <motion.h1
+              variants={slideUp(0.2)}
+              initial="initial"
+              animate="animate"
+              className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-8 md:ml-0 md:w-[600px] mt-12 md:mt-0"
+            >
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Unleash the Dawn of Digital Success!")
+                    .callFunction(() => {
+                      // console.log('String typed out!');
+                    })
+                    .pauseFor(2500)
+                    .deleteAll(30)
+                    .callFunction(() => {
+                      // console.log('All strings were deleted');
+                    })
+                    .start();
+                }}
+                options={{
+                  delay: 30,
+                  loop: true,
+                }}
+              />
             </motion.h1>
-          <motion.button
-          variants={slideUp(0.6)}
-          initial="initial"
-           animate="animate"
-          className="primary-btn mt-4">Get Started</motion.button>
+            <div className="para mt-12 md:mt-44">
+              <motion.h1
+                variants={slideUp(0.4)}
+                initial="initial"
+                animate="animate"
+                className="text-slate-500 font-bold text-xl md:text-2xl mt-4"
+              >
+                Elevating brands into the digital dawn.
+              </motion.h1>
+              <motion.button
+                variants={slideUp(0.6)}
+                initial="initial"
+                animate="animate"
+                className="primary-btn mt-4"
+              >
+                Get Started
+              </motion.button>
+            </div>
           </div>
-        </div>
 
           {/* <div className="heroimg pt-4">
             <motion.img
@@ -99,35 +113,41 @@ const HomePage = () => {
             src={HeroImg} alt="hero" 
             className="rounded-lg md:mx-2 p-4 "/>
           </div> */}
-      </div>
-      {/* Second Hero Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
-      <div className="heroimg pt-4">
-            <motion.img
-            initial={{opacity: 0, x:100}}
-            whileInView={{opacity: 1, x:0}}
-            transition={{duration: 0.5, delay: 0.4}}
-            src={HeroImg2} alt="hero"
-            className="rounded-lg p-4 md:p-0"/>
-      </div>
-        <div className="flex flex-col justify-center p-4 md:p-0">
-          <motion.h1 
-            initial={{opacity: 0, x:-30}}
-            whileInView={{opacity: 1, x:0}}
-            transition={{duration: 0.5, delay: 0.4}}
-             className=" text-blue-800/90 text-4xl md:text-8xl font-bold mx-6">
-              Empowering Brands at the Break of Digital Dawn.
-          </motion.h1>
-          <motion.h1
-            initial={{opacity: 0, x:-30}}
-            whileInView={{opacity: 1, x:0}}
-            transition={{duration: 0.5, delay: 0.4}}
-            className="text-slate-500 font-bold  text-xl md:text-2xl mx-7">Your Brand, Your Dawn, Your Triumph.</motion.h1>
         </div>
-      </div>
-      <Cards />
-      {/* Why Choose Us Section */}
-      {/* <div className="why-choose-us bg-white py-16"> */}
+        {/* Second Hero Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
+          <div className="heroimg pt-4">
+            <motion.img
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              src={HeroImg2}
+              alt="hero"
+              className="rounded-lg p-4 md:p-0"
+            />
+          </div>
+          <div className="flex flex-col justify-center p-4 md:p-0">
+            <motion.h1
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className=" text-blue-800/90 text-4xl md:text-8xl font-bold mx-6"
+            >
+              Empowering Brands at the Break of Digital Dawn.
+            </motion.h1>
+            <motion.h1
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-slate-500 font-bold  text-xl md:text-2xl mx-7"
+            >
+              Your Brand, Your Dawn, Your Triumph.
+            </motion.h1>
+          </div>
+        </div>
+        <Cards />
+        {/* Why Choose Us Section */}
+        {/* <div className="why-choose-us bg-white py-16"> */}
         {/* <div className="container mx-auto px-4">
           <motion.h2
         initial={{ opacity: 0, y: -30 }}
@@ -224,8 +244,8 @@ const HomePage = () => {
             </div>
           </div>
         </div> */}
-      {/* </div> */}
-    </div>
+        {/* </div> */}
+      </div>
     </>
   )
 }
