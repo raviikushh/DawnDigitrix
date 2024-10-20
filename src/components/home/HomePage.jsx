@@ -127,36 +127,36 @@ const HomePage = () => {
             <p className="text-white mt-4"> Choose <span className="text-xl font-semibold">DawnDigitrix</span> for tailor-made digital marketing solutions and a dedicated partnership that is fully committed to helping your business thrive in the ever-evolving digital landscape.</p>
          </div>
      </div>
+
       <div className="md:px-40 overflow-hidden">
         
         {/* Second Hero Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
-          <div className="heroimg pt-4">
-            <motion.img
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              src="#"
-              alt="hero"
-              className="rounded-lg p-4 md:p-0"
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[550px]">
+          <div className="ct pt-4 flex flex-col justify-evenly px-4 md:px-0 gap-4 md:gap-0 mr-8 text-left">
+              <div className="one md:mb-[-50px]">
+                <h1 className='text-3xl font-semibold'>Results That Matter</h1>
+                <p className='text-[20px] text-slate-900'>We focus on delivering outcomes that match your vision. Our goal is to provide timely, impactful solutions that drive real, measurable growth for your brand. From increased visibility to higher engagement and conversions, we align every move with your success.</p>
+              </div>
+              <div className="two"><h1 className='text-3xl font-semibold'>Your Growth Partners</h1>
+                <p className='text-[20px] text-slate-900'>At DawnDigitrix, we are more than just marketers—we’re your growth partners. With innovative strategies and dedicated support, we’re committed to guiding your brand toward sustained success, offering creative solutions that light the way to your goals.</p>
+              </div>
           </div>
           <div className="flex flex-col justify-center p-4 md:p-0">
             <motion.h1
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className=" text-blue-800/90 text-4xl md:text-8xl font-bold mx-6"
+              className=" text-blue-800/90 text-4xl md:text-7xl font-bold mx-2 text-left"
             >
-              Empowering Brands at the Break of Digital Dawn.
+              Empowering Brands at the <span className='md:text-[80px] italic'>Break of Digital</span> <span className='md:text-8xl'>Dawn.</span>
             </motion.h1>
             <motion.h1
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-slate-500 font-bold  text-xl md:text-2xl mx-7"
+              className="text-black font-bold  text-xl md:text-3xl mx-3 mt-6"
             >
-              Your Brand, Your Dawn, Your Triumph.
+              Your Brand, Your Dawn, Your Triumph
             </motion.h1>
           </div>
         </div>
