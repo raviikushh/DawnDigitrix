@@ -46,7 +46,7 @@ const HomePage = () => {
           ↑
         </button>
       )}
-      <div className="md:h-[700px] h-auto w-full">
+      <div className="md:h-[700px] h-[800px] w-full">
         <video
           src={Video}
           autoPlay
