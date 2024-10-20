@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 import {slideUp} from '../../utility/animation'
 import Cards from "../cards/Cards"
 import { useEffect, useState } from 'react';
-import Video from '../../assets/back-video-2x.mp4'
+import Video from '../../assets/back-video-2x-cropped.mp4'
 import Team from '../../assets/team.jpg'
 
 const HomePage = () => {
@@ -41,7 +41,7 @@ const HomePage = () => {
       {showScroll && (
         <button
           onClick={scrollTop}
-          className="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full h-12 w-10 shadow-lg hover:bg-blue-700 transition duration-300"
+          className="fixed bottom-4 z-10 right-4 bg-blue-500 text-white p-3 rounded-full h-12 w-10 shadow-lg hover:bg-blue-700 transition duration-300"
         >
           ↑
         </button>
@@ -64,7 +64,7 @@ const HomePage = () => {
               variants={slideUp(0.2)}
               initial="initial"
               animate="animate"
-              className=" text-slate-800 text-4xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-8 md:ml-0 md:w-[600px] mt-12 md:mt-0"
+              className=" text-slate-800 text-6xl md:text-8xl font-bold h-[50px] md:h-[200px] ml-8 md:ml-0 md:w-[600px] mt-12 md:mt-0"
             >
               <Typewriter
                 onInit={(typewriter) => {
@@ -86,7 +86,7 @@ const HomePage = () => {
                 }}
               />
             </motion.h1>
-            <div className="para mt-12 md:mt-44">
+            <div className="para mt-44 md:mt-44 mx-8 md:mx-0">
               <motion.h1
                 variants={slideUp(0.4)}
                 initial="initial"
@@ -132,7 +132,7 @@ const HomePage = () => {
         
         {/* Second Hero Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[550px]">
-          <div className="ct pt-4 flex flex-col justify-evenly px-4 md:px-0 gap-4 md:gap-0 mr-8 text-left">
+          <div className="ct pt-4 flex flex-col justify-evenly pl-8 md:px-0 gap-4 md:gap-0 mr-8 text-left">
               <div className="one md:mb-[-50px]">
                 <h1 className='text-3xl font-semibold'>Results That Matter</h1>
                 <p className='text-[20px] text-slate-900'>We focus on delivering outcomes that match your vision. Our goal is to provide timely, impactful solutions that drive real, measurable growth for your brand. From increased visibility to higher engagement and conversions, we align every move with your success.</p>
