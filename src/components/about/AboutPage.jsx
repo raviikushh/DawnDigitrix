@@ -3,9 +3,9 @@ import Innovative from '../../assets/innovative.jpg'
 
 const About = () => {
   return (
-    <div className="mt-32 bg-black overflow-auto">
+    <div className="mt-24 bg-black overflow-auto">
         <div className="txt text-white mx-4 md:mx-28 ">
-          <h1 className="text-2xl md:text-7xl pt-10 md:pt-20">Achieve Digital Success with Our <span className="text-green-600">Innovative Strategies - cutting edge </span>approach</h1>
+          <h1 className="text-2xl md:text-7xl pt-10 md:pt-20">Achieve Digital Success with Our <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">Innovative Strategies - cutting edge </span>approach</h1>
         </div>
         <div className="photo mt-12 p-4 md:p-20">
           <img src={Innovative} alt="About" className="w-full h-auto" />

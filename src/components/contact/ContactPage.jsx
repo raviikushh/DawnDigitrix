@@ -4,6 +4,31 @@ import { useState } from 'react';
 
 
 const ContactPage = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "958d877d-cb08-4b78-99c4-3f580a0387c1");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
 
   const [formData, setFormData] = useState({
     name: '',
@@ -19,20 +44,16 @@ const ContactPage = () => {
     });
   };
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form data submitted:', formData);
-  };
 
 
 
   return (
     <>
     <div className="contact-page mt-32 px-4 sm:px-6 lg:px-8 bg-gray-100">
+      <span>{result}</span>
   <h1 className="text-4xl font-bold text-center mb-8 pt-10">Connect with Us</h1>
   <form
-    onSubmit={handleSubmit}
+    onSubmit={onSubmit}
     className="contact-form max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mb-14"
   >
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">

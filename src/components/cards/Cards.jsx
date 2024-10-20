@@ -11,8 +11,8 @@ import {motion} from 'framer-motion'
 const Cards = () => {
   return (
     <>
-    <div className="bg-gray-50 py-20 px-10 md:px-0">
-    <div className="containers">
+    <div className=" py-20 px-10 md:px-0">
+    <div className="">
     </div>
         <motion.div 
                     initial={{opacity: 0, x:-100}}
@@ -21,45 +21,45 @@ const Cards = () => {
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 rounded-lg">
 
                 {/* Social Media Marketing */}
-            <div className="Social Media Marketing bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-105 transition-all duration-700" >
+            <div className="Social Media Marketing bg-white shadow-xl rounded-3xl h-[450px] px-5 py-10 cursor-pointer flex flex-col  items-center gap-5 md:max-w-[330px] mx-auto hover:scale-105 transition-all duration-700 text-center" >
                 <img src={Img1} alt="" className="w-36 h-36 rounded-full object-contain p-3" />
                 <h1 className="text-xl font-semibold">Social Media Marketing</h1>
-                <p className="text-sm text-black/80 leading-relaxed">Our social media marketing services are designed to grow your brand’s online presence. We help your brand establish trust and build relationships with potential buyers.</p>
+                <p className="text-sm text-black leading-relaxed">At Dawn Digitrix, we transform your social media presence into a vibrant community where engagement thrives, and brand stories come alive. Through captivating content and strategic management, we foster meaningful interactions and drive brand awareness.</p>
             </div>
 
             {/* SEO */}            
-            <div className="SEO bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-110 transition-all duration-700">
+            <div className="SEO bg-white shadow-xl rounded-3xl h-[450px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[330px] mx-auto hover:scale-110 transition-all duration-700">
                 <img src={Img2} alt="" className="w-36 h-36 rounded-full object-contain" />
                 <h1 className="text-xl font-semibold">SEO</h1>
-                <p className="text-sm text-black/80 leading-relaxed">Our SEO services help drive traffic to your website by improving keyword rankings in search engines.</p>
+                <p className="text-sm text-black leading-relaxed">Elevate your brand’s online presence with SEO strategies that boost visibility, drive organic traffic, and connect your audience with your content seamlessly. We use data-driven insights to optimize for search engines and ensure your brand is found by those who matter most.</p>
             </div>
             
             {/* PPC */}
-            <div className="PPC bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-110 transition-all duration-700">
+            <div className="PPC bg-white shadow-xl rounded-3xl h-[450px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[330px] mx-auto hover:scale-110 transition-all duration-700">
                 <img src={Img3} alt="" className="w-36 h-36 rounded-full object-contain" />
                 <h1 className="text-xl font-semibold">Performance Marketing</h1>
-                <p className="text-sm text-black/80 leading-relaxed">Our PPC services help drive traffic to your website by improving keyword rankings in search engines.</p>
+                <p className="text-sm text-black leading-relaxed">Maximizing ROI through highly targeted campaigns that combine real-time analytics and consumer insights. We ensure every rupee spent drives tangible results—whether that’s conversions, leads, or sales—enhancing your bottom line</p>
             </div>
 
             {/* Content Marketing */}
-            <div className="Content Marketing bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-110 transition-all duration-700">
+            <div className="Content Marketing bg-white shadow-xl rounded-3xl h-[450px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[330px] mx-auto hover:scale-110 transition-all duration-700">
                 <img src={Img4} alt="" className="w-36 h-36 rounded-full object-contain" />
                 <h1 className="text-xl font-semibold">Content Marketing</h1>
-                <p className="text-sm text-black/80 leading-relaxed">Our content marketing services are designed to help your brand establish trust and build relationships with potential buyers.</p>
+                <p className="text-sm text-black leading-relaxed">Content is king, and we know how to create it. Our content marketing services craft compelling stories that align with your brand’s voice, turning ideas into engaging experiences that captivate your audience and keep them coming back for more.</p>
             </div>
 
             {/* Email MArketing */}
-            <div className="Email Marketing bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-110 transition-all duration-700">
+            <div className="Email Marketing bg-white shadow-xl rounded-3xl h-[450px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[330px] mx-auto hover:scale-110 transition-all duration-700">
                 <img src={Img5} alt="" className="w-36 h-36 rounded-full object-contain" />
                 <h1 className="text-xl font-semibold">Email Marketing</h1>
-                <p className="text-sm text-black/80 leading-relaxed">Our email marketing services help you speed up your sales cycle. The goal of email marketing is to move your prospects from one stage of your sales funnel to the next.</p>
+                <p className="text-sm text-black leading-relaxed">Build lasting connections with personalized email campaigns that inform, engage, and inspire action. Our targeted strategies ensure every email adds value, fosters loyalty, and drives engagement for long-term growth.</p>
             </div>
 
             {/* Web Design & Developement */}
-            <div className="Web Design & Developement bg-white shadow-xl rounded-xl h-[400px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[300px] mx-auto hover:scale-110 transition-all duration-700">
+            <div className="Web Design & Developement bg-white shadow-xl rounded-3xl h-[450px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[330px] mx-auto hover:scale-110 transition-all duration-700">
                 <img src={Img6} alt="" className="w-36 h-36 rounded-full object-contain" />
-                <h1 className="text-xl font-semibold">Web Design & Developement</h1>
-                <p className="text-sm text-black/80 leading-relaxed">Our web design & development services work to create a website that speaks for your brand. We provide web design and web development services to help you achieve your digital marketing goals.</p>
+                <h1 className="text-xl font-semibold">Web Design & Development</h1>
+                <p className="text-sm text-black leading-relaxed">Your website is your digital front door, and we ensure it leaves a lasting impression. We design and develop visually stunning, user-friendly websites that are not only aesthetically pleasing but also functional, converting visitors into loyal customers.</p>
             </div>
         </motion.div>
     </div>

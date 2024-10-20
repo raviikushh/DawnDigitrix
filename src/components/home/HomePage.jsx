@@ -1,5 +1,5 @@
 // import HeroImg from "../../assets/1.jpg"
-import HeroImg2 from "../../assets/strategy.avif"
+// import HeroImg2 from "../../assets/strategy.avif"
 // import IdeaImg from "../../assets/ideas.jpg"
 // import ExpertTeam from "../../assets/expert-team.avif"
 // import Customer from "../../assets/customer.avif"
@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 import {slideUp} from '../../utility/animation'
 import Cards from "../cards/Cards"
 import { useEffect, useState } from 'react';
-import Video from '../../assets/back-video.mp4'
+import Video from '../../assets/back-video-2x.mp4'
 import Team from '../../assets/team.jpg'
 
 const HomePage = () => {
@@ -57,7 +57,7 @@ const HomePage = () => {
           playsInline
         ></video>
       </div>
-      <div className="bg-gray-100 overflow-hidden md:px-40 top-0 md:-mt-[600px] -mt-[600px]">
+      <div className="bg-teal-100 overflow-hidden md:px-40 top-0 md:-mt-[600px] -mt-[600px]">
         <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
           <div className="flex flex-col justify-center items-center md:items-start">
             <motion.h1
@@ -91,7 +91,7 @@ const HomePage = () => {
                 variants={slideUp(0.4)}
                 initial="initial"
                 animate="animate"
-                className="text-slate-500 font-bold text-xl md:text-2xl mt-4"
+                className="text-white font-bold text-xl md:text-2xl mt-4"
               >
                 Elevating brands into the digital dawn.
               </motion.h1>
@@ -128,6 +128,7 @@ const HomePage = () => {
          </div>
      </div>
       <div className="md:px-40 overflow-hidden">
+        
         {/* Second Hero Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] ">
           <div className="heroimg pt-4">
@@ -135,7 +136,7 @@ const HomePage = () => {
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              src={HeroImg2}
+              src="#"
               alt="hero"
               className="rounded-lg p-4 md:p-0"
             />

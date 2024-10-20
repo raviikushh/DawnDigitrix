@@ -7,7 +7,9 @@ import whitelogo from '../../assets/logo_white.png'
 import gmail from '../../assets/gmail.png'
 
 
+
 export const Footer = () => {
+
   return (
     <div className='w-full bg-black  overflow-hidden'>
     <div className=' md:px-4 flex flex-col md:flex-row justify-between items-center'>
