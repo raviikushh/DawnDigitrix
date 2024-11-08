@@ -15,7 +15,7 @@ export const Footer = () => {
     <div className=' md:px-4 flex flex-col md:flex-row justify-between items-center'>
       <img src={whitelogo} alt="" className='h-32'/>
       <div className='flex mt-4 md:mt-0 gap-3 px-10'>
-        <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
+        <a href='https://www.facebook.com/profile.php?id=61566586425524' target='_blank' rel='noopener noreferrer'>
         <CIcon icon={cibFacebookF} className='h-8 bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-blue-600'/>
         </a>
         <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
@@ -24,7 +24,7 @@ export const Footer = () => {
         <a href='https://www.instagram.com/dawndigitrix.inc?igsh=N2xocm96dHAxNWJ1' target='_blank' rel='noopener noreferrer'>
         <CIcon icon={cibInstagram} className='h-8  bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-gradient-to-r from-orange-500  to-pink-500'/>
         </a>
-        <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>
+        <a href='https://www.linkedin.com/company/dawndigitrixinc' target='_blank' rel='noopener noreferrer'>
         <CIcon icon={cibLinkedinIn} className='h-8  bg-white hover:scale-105 transition-all ease-in-out duration-700 rounded-full hover:bg-blue-500'/>
         </a>
       </div>

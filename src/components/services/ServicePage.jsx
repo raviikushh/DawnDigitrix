@@ -5,7 +5,7 @@ const ServicePage = () => {
     <div className="container mx-auto px-4 py-12 mt-20">
       <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">Our Services</h1>
       <p className="mb-12 text-center text-gray-600 text-lg max-w-2xl mx-auto">
-        We provide cutting-edge digital marketing solutions tailored to help your business grow and thrive in today's competitive landscape.
+        We provide cutting-edge digital marketing solutions tailored to help your business grow and thrive in today&apos;s competitive landscape.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="service-card p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
@@ -41,7 +41,7 @@ const ServicePage = () => {
         <div className="service-card p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold mb-3 text-gray-800">Web Design & Development</h2>
           <p className="text-gray-600">
-            Create a stunning, responsive website that delivers a seamless user experience and showcases your brand's uniqueness.
+            Create a stunning, responsive website that delivers a seamless user experience and showcases your brand&apos;s uniqueness.
           </p>
         </div>
       </div>
@@ -62,7 +62,7 @@ const ServicePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="testimonial-card p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <p className="text-gray-700 italic">
-              "The team at XYZ Marketing completely transformed our online presence. Their expertise in SEO and content marketing helped us reach more customers and grow our business."
+              &quot;The team at XYZ Marketing completely transformed our online presence. Their expertise in SEO and content marketing helped us reach more customers and grow our business.&quot;
             </p>
             <p className="text-gray-900 mt-4 font-bold">— John Doe, CEO of ABC Corp</p>
           </div>
