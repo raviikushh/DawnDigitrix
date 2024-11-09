@@ -15,8 +15,8 @@ const Cards = () => {
     <div className="">
     </div>
         <motion.div 
-                    initial={{opacity: 0, x:-100}}
-                    whileInView={{opacity: 1, x:0}}
+                    initial={{opacity: 0, y:100}}
+                    whileInView={{opacity: 1, y:0}}
                     transition={{duration: 0.5, delay: 0.4}}
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 rounded-lg">
 

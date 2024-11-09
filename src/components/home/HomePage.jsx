@@ -52,7 +52,7 @@ const HomePage = () => {
           playsInline
         ></video>
       </div>
-      <div className="bg-teal-100 overflow-hidden md:px-40 top-0 -mt-[710px]">
+      <div className="bg-teal-100 overflow-hidden md:px-40 top-0 -mt-[700px] md:-mt-[650px]">
         <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
           <div className="flex flex-col justify-center items-center md:items-start">
             <motion.h1
@@ -86,7 +86,7 @@ const HomePage = () => {
                 variants={slideUp(0.4)}
                 initial="initial"
                 animate="animate"
-                className="text-white font-bold text-xl md:text-2xl mt-4"
+                className="text-white font-bold text-xl md:text-2xl mt-6"
               >
                 Elevating brands into the digital dawn.
               </motion.h1>
@@ -112,7 +112,7 @@ const HomePage = () => {
         </div>
       </div>
 
-     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-40 md:gap-8 py-10">
+     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-40 md:gap-8 py-32">
          <div className="photo md:w-full h-full md:m-auto">
            <img src={Team} alt="team" className="rounded-xl p-2 md:p-0" />
          </div>
