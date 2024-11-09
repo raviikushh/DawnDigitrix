@@ -5,7 +5,7 @@ import {slideUp} from '../../utility/animation'
 import Cards from "../cards/Cards"
 import { useEffect, useState } from 'react';
 import Video from '../../assets/back-video-2x-cropped.mp4'
-import Team from '../../assets/team.jpg'
+import HeroImg from '../../assets/hero_img.jpg'
 
 const HomePage = () => {
     const [showScroll, setShowScroll] = useState(false);
@@ -112,9 +112,9 @@ const HomePage = () => {
         </div>
       </div>
 
-     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-40 md:gap-8 py-32">
+     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-36 md:gap-4 py-32">
          <div className="photo md:w-full h-full md:m-auto">
-           <img src={Team} alt="team" className="rounded-xl p-2 md:p-0" />
+           <img src={HeroImg} alt="team" className="rounded-xl mt-2 w-96 h-64" />
          </div>
          <div className="flex  flex-col text-justify text-xl md:pl-14 p-4 md:p-0">
              <h1 className="text-white text-5xl">Why Choose Us?</h1>
@@ -126,8 +126,8 @@ const HomePage = () => {
       <div className="md:px-40 overflow-hidden">
         
         {/* Second Hero Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[550px]">
-          <div className="ct pt-4 flex flex-col justify-evenly pl-8 md:px-0 md:gap-0 mr-8 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[550px] mt-4 md:mt-0">
+          <div className="ct pt-4 flex flex-col justify-evenly pl-8 md:px-0 md:gap-0 mr-8 text-left gap-8 md:gap-0">
               <div className="one ">
                 <h1 className='text-3xl font-semibold'>Results That Matter</h1>
                 <p className='text-[20px] text-slate-900'>We focus on delivering outcomes that match your vision. Our goal is to provide timely, impactful solutions that drive real, measurable growth for your brand. From increased visibility to higher engagement and conversions, we align every move with your success.</p>

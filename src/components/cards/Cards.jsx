@@ -2,7 +2,7 @@ import Img1 from '../../assets/social.avif'
 import Img2 from '../../assets/seo.jpg'
 import Img3 from '../../assets/ppc.avif' 
 import Img4 from '../../assets/content.svg'
-import Img5 from '../../assets/email.avif'
+import Img5 from '../../assets/brand.jpg'
 import Img6 from '../../assets/web.avif' 
 import {motion} from 'framer-motion'
 
@@ -51,8 +51,8 @@ const Cards = () => {
             {/* Email MArketing */}
             <div className="Email Marketing bg-white shadow-xl rounded-3xl h-[450px]  px-5 py-10 cursor-pointer text-center flex flex-col  items-center gap-5 md:max-w-[330px] mx-auto hover:scale-110 transition-all duration-700">
                 <img src={Img5} alt="" className="w-36 h-36 rounded-full object-contain" />
-                <h1 className="text-xl font-semibold">Email Marketing</h1>
-                <p className="text-sm text-black leading-relaxed">Build lasting connections with personalized email campaigns that inform, engage, and inspire action. Our targeted strategies ensure every email adds value, fosters loyalty, and drives engagement for long-term growth.</p>
+                <h1 className="text-xl font-semibold">Brand Creation</h1>
+                <p className="text-sm text-black leading-relaxed">Branding is more than just a logo or tagline—it&apos;s about crafting a unique voice, style, and visual identity that connects with your audience. A consistent brand image enhances recognition and builds trust, fostering a sense of reliability and familiarity with your customers.</p>
             </div>
 
             {/* Web Design & Developement */}
