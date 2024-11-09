@@ -52,7 +52,7 @@ const HomePage = () => {
           playsInline
         ></video>
       </div>
-      <div className="bg-teal-100 overflow-hidden md:px-40 top-0 -mt-[600px]">
+      <div className="bg-teal-100 overflow-hidden md:px-40 top-0 -mt-[710px]">
         <div className="flex flex-col md:flex-row justify-between min-h-[600px]">
           <div className="flex flex-col justify-center items-center md:items-start">
             <motion.h1
@@ -112,7 +112,7 @@ const HomePage = () => {
         </div>
       </div>
 
-     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-20 md:gap-8 py-10">
+     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-40 md:gap-8 py-10">
          <div className="photo md:w-full h-full md:m-auto">
            <img src={Team} alt="team" className="rounded-xl p-2 md:p-0" />
          </div>
@@ -143,7 +143,7 @@ const HomePage = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               className=" text-blue-800/90 text-4xl md:text-7xl font-bold mx-2 text-left"
             >
-              Empowering Brands at the <span className=' '>Break of Digital</span> <span className=''>Dawn.</span>
+              Empowering Brands at the <span className='italic'>Break of Digital</span> <span className=''>Dawn.</span>
             </motion.h1>
             <motion.h1
               initial={{ opacity: 0, x: -30 }}

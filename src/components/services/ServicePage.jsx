@@ -5,8 +5,8 @@ const ServicePage = () => {
     <div className="container mx-auto px-4 py-12">
       {/* Services Section */}
       <div className="container mx-auto px-4 py-12 mt-20">
-        <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">Our Services</h1>
-        <p className="mb-12 text-center text-gray-600 text-lg max-w-2xl mx-auto">
+        <h1 className="text-6xl font-bold mb-6 text-center text-gray-900 bg-gradient-to-b from-blue-700 to-purple-500 text-transparent bg-clip-text">Our Services</h1>
+        <p className="mb-12 text-center text-lg max-w-2xl mx-auto">
           We provide cutting-edge digital marketing solutions tailored to help your business grow and thrive in today&apos;s competitive landscape.
         </p>
 
@@ -14,7 +14,7 @@ const ServicePage = () => {
           <div className="service-card p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <h2 className="text-2xl font-semibold mb-3 text-gray-800">Social Media Marketing</h2>
             <p className="text-gray-600">
-              Maximize your online presence and boost your rankings with strategic SEO techniques that drive organic traffic and visibility.
+            In today’s digital landscape, a strong social media presence is more vital than ever. With consumers expecting brands to foster community and meaningful connections online, it’s clear that leveraging social media marketing is essential for businesses of all sizes to engage effectively with their audience and build lasting relationships.
             </p>
           </div>
           <div className="service-card p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
