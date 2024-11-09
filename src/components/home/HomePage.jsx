@@ -98,6 +98,13 @@ const HomePage = () => {
               >
                 Get Started
               </motion.button>
+              <motion.div 
+              variants={slideUp(0.6)}
+              initial="initial"
+              animate="animate"
+              className="photo w-[390px] md:hidden mt-4">
+              <img src={HeroImg} alt="team" className="rounded-xl" />
+              </motion.div>
             </div>
           </div>
 
@@ -112,8 +119,8 @@ const HomePage = () => {
         </div>
       </div>
 
-     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-36 md:gap-4 py-32">
-         <div className="photo md:w-full h-full md:m-auto">
+     <div className="black bg-black/90 md:h-[500px]  overflow-hidden flex flex-col md:flex-row justify-between md:px-28 md:py-36 md:gap-4 py-10">
+         <div className="photo md:w-full h-full md:m-auto hidden md:block">
            <img src={HeroImg} alt="team" className="rounded-xl mt-2 w-96 h-64" />
          </div>
          <div className="flex  flex-col text-justify text-xl md:pl-14 p-4 md:p-0">
