@@ -41,7 +41,7 @@ const HomePage = () => {
           ↑
         </button>
       )}
-      <div className="relative h-[800px] md:h-[700px] w-full overflow-hidden">
+      <div className="relative h-[800px] w-full overflow-hidden">
         <video
           src={Video}
           autoPlay
