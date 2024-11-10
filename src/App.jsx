@@ -6,7 +6,7 @@ import ServicePage from "./components/services/ServicePage"
 import ContactPage from "./components/contact/ContactPage"
 import { Footer } from "./components/footer/Footer"
 import { NextUIProvider } from "@nextui-org/react"
-import ScrollToTop from "./components/scroll/ScrolltoTop"
+import ScrollToTop from "./components/scroll/ScrollToTop"
 
 
 function App() {
