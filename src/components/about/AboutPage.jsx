@@ -2,6 +2,8 @@ import Innovative from '../../assets/innovative.jpg'
 
 
 const About = () => {
+
+
   return (
     <div className="mt-24 bg-black overflow-auto">
         <div className="txt text-white mx-4 md:mx-28 ">

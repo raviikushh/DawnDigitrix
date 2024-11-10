@@ -3,7 +3,6 @@ import toast,{Toaster} from 'react-hot-toast';
 
 const ContactPage = () => {
 
-
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const ServicePage = () => {
+
   return (
     <div className="container mx-auto px-4 py-12 ">
       {/* Services Section */}
@@ -52,7 +53,7 @@ const ServicePage = () => {
 
       {/* About Us Section */}
       <section className="about-us mt-10 py-4 md:py-8">
-        <p className="max-w-3xl mx-auto text-md text-justify">
+        <p className="max-w-3xl mx-auto text-md md:text-2xl text-justify">
         We’re a fresh, passionate team of digital marketing professionals committed to helping businesses grow online. Although new to the market, our focus is on driving meaningful results through innovative strategies and tailored services. Whether you&apos;re looking to increase traffic, boost engagement, or enhance conversions, we have the right tools and approach to help you succeed.
         </p>
       </section>

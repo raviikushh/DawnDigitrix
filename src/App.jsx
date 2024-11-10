@@ -6,6 +6,8 @@ import ServicePage from "./components/services/ServicePage"
 import ContactPage from "./components/contact/ContactPage"
 import { Footer } from "./components/footer/Footer"
 import { NextUIProvider } from "@nextui-org/react"
+import ScrollToTop from "./components/scroll/ScrolltoTop"
+
 
 function App() {
 
@@ -13,6 +15,7 @@ function App() {
     <NextUIProvider>
     <main>
     <HashRouter>
+    <ScrollToTop/>
     <Header/>
       <Routes>
         <Route path='/' element={<HomePage />} />

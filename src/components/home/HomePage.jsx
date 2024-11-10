@@ -34,7 +34,7 @@ const HomePage = () => {
     return () => {
       window.removeEventListener('scroll', checkScrollTop);
     };
-  }, [showScroll]);
+  }, []);
 
   return (
     <>

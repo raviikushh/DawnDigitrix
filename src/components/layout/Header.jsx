@@ -46,7 +46,7 @@ const Header = () => {
                   <li className="cursor-pointer hover:text-slate-500" onClick={HandleNavigate}>Home</li>
                   <li className="cursor-pointer hover:text-slate-500" onClick={HandleNavigate}>About Us</li>
                   <li className="cursor-pointer hover:text-slate-500" onClick={HandleNavigate}>Services</li>
-                  <li className="cursor-pointer hover:text-slate-500 primary-btn " onClick={HandleNavigate}>Contact</li>
+                  <li className="cursor-pointer hover:text-teal-500 primary-btn " onClick={HandleNavigate}>Contact</li>
                  </ul>
               </div>
               <div className="md:hidden">
