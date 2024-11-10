@@ -18,7 +18,7 @@ const ServicePage = () => {
             </p>
           </div>
           <div className="service-card p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <h2 className="text-2xl font-semibold mb-3 text-gray-800">SEO Optimization</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-gray-800">SEO </h2>
             <p className="text-gray-600">
             If you’re searching for a reliable SEO agency near you, look no further! In today’s highly competitive digital world, ranking high on search engine result pages is crucial for drawing in potential customers. Research indicates that inbound strategies like SEO and blogging generate the highest quality leads for nearly 60% of marketers.
             </p>

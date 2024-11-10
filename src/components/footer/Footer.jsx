@@ -40,7 +40,13 @@ export const Footer = () => {
         <p className='text-white ml-1 mb-6 md:mb-5 italic text-[17px]'>Let&apos;s Bring Your Vision to your brand!</p>
         <div className="dawn flex ml-1 md:ml-0">
           <img src={gmail} alt="" className='md:h-8 h-8 rounded-full'/>
-        <p className='text-white mt-0.5 md:mt-0.5 text-lg  pl-2 md:pl-2'>contact@dawndigitrix.com</p>
+          <a 
+            href="mailto:contact@dawndigitrix.com" 
+            className="text-white mt-0.5 md:mt-0.5 text-lg pl-2 md:pl-2"
+          >
+            contact@dawndigitrix.com
+          </a>
+
         </div>
       </div>
       <div className="content md:w-[500px] mx-12  mt-8 md:mx-0 md:mt-0 mb-20">

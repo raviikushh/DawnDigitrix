@@ -1,5 +1,5 @@
 import Header from "./components/layout/Header"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import HomePage from "./components/home/HomePage"
 import AboutPage from "./components/about/AboutPage"
 import ServicePage from "./components/services/ServicePage"
@@ -12,7 +12,7 @@ function App() {
   return (
     <NextUIProvider>
     <main>
-    <BrowserRouter>
+    <HashRouter>
     <Header/>
       <Routes>
         <Route path='/' element={<HomePage />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path='contact' element={<ContactPage />} />
       </Routes> 
     <Footer/>
-    </BrowserRouter>
+    </HashRouter>
     </main>
     </NextUIProvider>
   )
