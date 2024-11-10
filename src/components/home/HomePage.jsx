@@ -29,7 +29,17 @@ const HomePage = () => {
     nextSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const videoRef = useRef(null);
+  
   useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      // Attempt to play the video programmatically
+      video.play().catch((error) => {
+        console.error("Autoplay failed:", error);
+        // Optional: handle autoplay failure, like showing a fallback image
+      });
+    }
     window.addEventListener('scroll', checkScrollTop);
     return () => {
       window.removeEventListener('scroll', checkScrollTop);
@@ -48,6 +58,7 @@ const HomePage = () => {
       )}
       <div className="relative h-[800px] w-full overflow-hidden">
         <video
+          ref={videoRef}
           src={Video}
           autoPlay
           loop
